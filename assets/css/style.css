@@ -1,0 +1,492 @@
+/*@import "mixins";*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+--------------------------------------------------------------*/
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* bg color: #16618C */
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  margin: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+  color: #404040;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+/*--------------------------------------------------------------
+# Elements
+--------------------------------------------------------------*/
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+}
+
+hr {
+  background-color: #ccc;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+  margin: 0 0 1.5em 3em;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.5em;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dd {
+  margin: 0 1.5em 1.5em;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+/*--------------------------------------------------------------
+## Links
+--------------------------------------------------------------*/
+a {
+  color: #fff;
+}
+
+a:visited {
+  color: #da2e35;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #da2e35;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover,
+a:active {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  clip-path: none;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+  outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5em;
+}
+
+/*
+Theme Name: WeeKub
+Theme URI: http://underscores.me/
+Description: Child theme for the _$.  http://codex.wordpress.org/Child_Themes
+Author:  Underscores.me
+Author URI: http://underscores.me/
+Template: Angelus-Plongee
+*/
+/* FONT FACES */
+/* Roboto 2014 */
+@font-face {
+  font-family: "Roboto Thin";
+  src: url("../fonts/roboto-2014/Roboto-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("../fonts/roboto-2014/Roboto-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("../fonts/roboto-2014/Roboto-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("../fonts/roboto-2014/Roboto-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto Bold";
+  src: url("../fonts/roboto-2014/Roboto-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+/* ROboto Slab */
+@font-face {
+  font-family: "Roboto-Slab Bold";
+  src: url("../fonts/roboto-slab/RobotoSlab-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Slab";
+  src: url("../fonts/roboto-slab/RobotoSlab-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Slab Light";
+  src: url("../fonts/roboto-slab/RobotoSlab-Light.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto-Slab Thin";
+  src: url("../fonts/roboto-slab/RobotoSlab-Thin.ttf") format("truetype");
+  font-display: swap;
+}
+/* Playfair Display */
+@font-face {
+  font-family: "PlayfairDisplay-Black";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Black.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay-BlackItalic";
+  src: url("../fonts/playfair-display/PlayfairDisplay-BlackItalic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay-Bold";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Bold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay-BoldItalic";
+  src: url("../fonts/playfair-display/PlayfairDisplay-BoldItalic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay-Italic";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Italic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplay-Regular";
+  src: url("../fonts/playfair-display/PlayfairDisplay-Regular.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC-Black";
+  src: url("../fonts/playfair-display/PlayfairDisplaySC-Black.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC-BlackItalic";
+  src: url("../fonts/playfair-display/PlayfairDisplaySC-BlackItalic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC-Bold";
+  src: url("../fonts/playfair-display/PlayfairDisplaySC-Bold.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC-BoldItalic";
+  src: url("../fonts/playfair-display/PlayfairDisplaySC-BoldItalic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC-Italic";
+  src: url("../fonts/playfair-display/PlayfairDisplaySC-Italic.otf") format("opentype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "PlayfairDisplaySC-Regular";
+  src: url("../fonts/playfair-display/PlayfairDisplaySC-Regular.otf") format("opentype");
+  font-display: swap;
+}
+.bg {
+  background: url(../img/bg.png);
+  -webkit-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
+  background-repeat: repeat;
+}
+
+.container {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.container .title h1 {
+  font-family: "Roboto Thin";
+  line-height: 1.1;
+  margin: 1rem 0 0;
+}
+.container .title h2 {
+  font-family: "Roboto-Slab";
+  font-size: 2rem;
+  line-height: 1;
+}
+.container .title h1, .container .title h2, .container .title p {
+  color: #FFF;
+}
+.container .title p {
+  letter-spacing: 3.5px;
+}
+.container .logo {
+  margin-bottom: 1.1rem;
+}
+.container .text {
+  color: #FFF;
+  position: relative;
+  width: 120px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container .text::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: 0;
+  margin-left: -35px;
+  width: 30px;
+  height: 30px;
+  background-image: url(../icons/envelope.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 30px;
+  -o-background-size: 30px;
+  background-size: 30px;
+}
+.container .text .bi-envelope {
+  color: #FFF;
+}
+.container a {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+.container a::before {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95px;
+  border-top: 1px solid #FFF;
+  transition: all 0.5s;
+}
+.container a:hover::before {
+  top: 22px;
+}
+
+/*# sourceMappingURL=style.css.map */
