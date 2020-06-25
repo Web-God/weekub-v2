@@ -1,0 +1,89 @@
+.bg {
+  background: url(../img/bg.png);
+  -webkit-background-size: auto;
+       -o-background-size: auto;
+          background-size: auto;
+  background-repeat: repeat;
+}
+.container {
+  padding: 2rem;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  .title {
+    h1 {
+      font-family: 'Roboto Thin';
+      line-height: 1.1;
+      margin: 1rem 0 0;
+    }
+    h2 {
+      font-family: 'Roboto-Slab';
+      font-size: 2rem;
+      line-height: 1;
+    }
+    h1, h2, p {
+      color: #FFF;
+    }
+    p {
+      letter-spacing: 3.5px;
+    }
+  }
+  .logo {
+    margin-bottom: 1.1rem;
+  }
+  .text {
+    color: #FFF;
+    position: relative;
+    width: 120px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3px;
+      left: 0;
+      margin-left: -35px;
+      width: 30px;
+      height: 30px;
+      background-image: url(../icons/envelope.svg);
+      background-repeat: no-repeat;
+      -webkit-background-size: 30px;
+           -o-background-size: 30px;
+              background-size: 30px;
+    }
+    .bi-envelope {
+      color: #FFF;
+    }
+  }
+  a {
+    -webkit-transition: all .5s;
+       -moz-transition: all .5s;
+        -ms-transition: all .5s;
+         -o-transition: all .5s;
+            transition: all .5s;
+    text-decoration: none;
+    &::before {
+      content: '';
+      position: relative;
+      display: block;
+      height: 1px;
+      top: 0;
+      left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      width: 95px;
+      border-top : 1px solid #FFF;
+      transition: all .5s;
+    }
+    &:hover::before {
+      top: 22px;
+    }
+  }
+}
