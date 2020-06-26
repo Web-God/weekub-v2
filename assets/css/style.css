@@ -408,6 +408,10 @@ Template: Angelus-Plongee
   background-repeat: repeat;
 }
 
+.letter-red {
+  color: #da2e35;
+}
+
 .container {
   padding: 2rem;
   display: flex;
